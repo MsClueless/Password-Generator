@@ -5,10 +5,12 @@ let createPasswordTwo = document.getElementById("password2")
 
 
 generateButton.addEventListener("click", function () {
-    let randomChars = Math.floor(Math.random() * characters.length);
-    console.log(randomChars);
+
+
     for (let i = 0; i < 16; i++) {
-        createPasswordOne.textContent += characters[randomChars]
+        let randomChars = Math.floor(Math.random() * characters.length);
+        createPasswordOne.textContent += characters[randomChars];
+        createPasswordTwo.textContent += characters[randomChars]
     }
 
 
